@@ -1,0 +1,156 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Roboto+Mono:wght@300&display=swap');
+*/
+body {
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+body.dark {
+    background: rgba(0, 0, 0, 1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+#header {
+    margin: auto;
+    width: 500px;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+
+
+}
+
+.nav li a {
+    background-color: black;
+    color: #fff;
+    width: 150px;
+    text-decoration: none;
+    text-align: justify;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: blueviolet;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+
+}
+
+.nav>li {
+    float: left;
+
+}
+
+.nav li:hover>ul {
+    display: block;
+
+
+}
+
+.nav li ul li {
+    position: relative;
+
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+.darkModeSwitch {
+    background: #6fc2db;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkModeSwitch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+    background: none;
+}
+
+.darkModeSwitch::after {
+    display: block;
+    background: #fffbf5;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .4);
+    content: "";
+}
+
+.darkModeSwitch.active {
+    background: #fdd384;
+}
+
+.darkModeSwitch.active::after {
+    left: unset;
+    right: 0;
+}
+
+/*form {
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid #ff165d;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    /*padding: 10px 20px;*/
+/*box-sizing: border-box;
+
+}*/
+
+/*input,
+textarea {
+    width: min-content;
+    margin-bottom: 20px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 50%;
+
+}
+
+#Button:hover {
+    cursor: pointer;
+}*/
